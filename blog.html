@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+
+    <title>Урожай</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/vendor/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://use.fontawesome.com/9b701ba3c8.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>Семена</h1></a>
+            </div>
+            <div class="search">
+                <form>
+                    <input type="text" value="" placeholder="поиск">
+                    <input type="submit" value="">
+                </form>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="#" class="facebook"> </a></li>
+                    <li><a href="#" class="facebook twitter"> </a></li>
+                    <li><a href="#" class="facebook chrome"> </a></li>
+                    <li><a href="#" class="facebook in"> </a></li>
+                    <li><a href="#" class="facebook beh"> </a></li>
+                    <li><a href="#" class="facebook vem"> </a></li>
+                    <li><a href="#" class="facebook yout"> </a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <!--head-bottom-->
+    <div class="head-bottom">
+        <div class="container">
+            <div id="navbar" class="navbar-collapse">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="active"><a href="index.html">Главная</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="terms.html">Условия и положения</a></li>
+                    <li><a href="policy.html">Политика конфиденциальности</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+
+    </div>
+    <!--head-bottom-->
+</div>
+
+<style>
+    .header-top {
+        padding: 1.5em 0;
+        background: #fff;
+    }
+
+    /*--logo--*/
+    .logo {
+        float: left;
+    }
+
+    .logo a {
+        display: block;
+    }
+
+    .logo a h1 {
+        font-size: 2em;
+        font-weight: 700;
+        color: #fff;
+        background: #464646;
+        padding: 0.2em 0.5em;
+    }
+
+    .logo a h1:hover {
+        text-decoration: none;
+    }
+
+    /*--logo--*/
+    /*--social--*/
+    .social {
+        float: right;
+        width: 26.33%;
+        padding: 0.32em 0;
+    }
+
+    .social ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .social ul li {
+        display: inline-block;
+        margin: 0;
+    }
+
+    .social ul li a.facebook {
+        background: url(../images/social.png) no-repeat 0px 0px;
+        width: 32px;
+        height: 32px;
+        display: block;
+    }
+
+    .social ul li a.twitter {
+        background: url(../images/social.png) no-repeat -34px 0px;
+    }
+
+    .social ul li a.chrome {
+        background: url(../images/social.png) no-repeat -68px 0px;
+    }
+
+    .social ul li a.in {
+        background: url(../images/social.png) no-repeat -102px 0px;
+    }
+
+    .social ul li a.beh {
+        background: url(../images/social.png) no-repeat -136px 0px;
+    }
+
+    .social ul li a.vem {
+        background: url(../images/social.png) no-repeat -169px 0px;
+    }
+
+    .social ul li a.yout {
+        background: url(../images/social.png) no-repeat -202px 0px;
+    }
+
+    .social ul li a.facebook:hover {
+        opacity: .5;
+    }
+
+    /*--social--*/
+    /*--search--*/
+    .search {
+        float: right;
+        width: 25%;
+        margin: 0.2em 0;
+    }
+
+    .search {
+        position: relative;
+        border: 2px solid #333333;
+        padding: 0.5em 0;
+        background: #fff;
+    }
+
+    .search input[type="text"] {
+        width: 80%;
+        outline: none;
+        padding: 0em 0.6em;
+        font-size: 1em;
+        color: #333333;
+        position: relative;
+        border: none;
+    }
+
+    .search input[type="submit"] {
+        background: url(../images/search-icon.png) no-repeat 0px 2px #fff;
+        border: none;
+        height: 26px;
+        width: 26px;
+        display: inline-block;
+        position: absolute;
+        outline: none;
+        cursor: pointer;
+        top: 6px;
+        right: 2px;
+    }
+
+    /*--search--*/
+    .logo a span {
+        font-size: 0.9em;
+        margin-left: 5em;
+        padding-top: 0.5em;
+    }
+
+    .head-bottom {
+        background: #fa4b2a;
+    }
+
+    /*--navigation--*/
+    ul.nav.navbar-nav li.active a {
+        background: #464646 ! important;
+        color: #fff ! important;
+        text-transform: uppercase ! important;
+        font-weight: 700;
+    }
+
+    ul.nav.navbar-nav li a:hover {
+        background: #464646 ! important;
+        color: #fff ! important;
+    }
+
+    ul.nav.navbar-nav li a {
+        color: #fff ! important;
+        text-transform: uppercase ! important;
+        font-weight: 700 ! important;
+        padding: 15px 23px ! important;
+        border-right: 1px solid rgba(255, 255, 255, 0.32) ! important;
+        font-size: 1em;
+        display: block;
+    }
+
+    .head-bottom ul.dropdown-menu li a {
+        color: #000 ! important;
+        padding: 8px 15px ! important;
+        font-size: 0.9em ! important;
+    }
+
+    .navbar-collapse {
+        padding-left: 0px ! important;
+        padding-right: 0px ! important;
+    }
+
+    .collapse {
+        display: none;
+    }
+</style>
+
+<section class="archive-area section_padding_80">
+    <div class="container">
+        <div class="row">
+            
+            <!-- Single Post -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-post fadeInUp">
+                    <!-- Post Thumb -->
+                    <div class="post-thumb">
+                        <img src="./assets/images/image00157.jpg" alt="">
+                    </div>
+                    <!-- Post Content -->
+                    <div class="post-content">
+                        <div class="post-meta d-flex">
+                            <!-- Post Comment & Share Area -->
+                            <div class="post-comment-share-area d-flex">
+                                <!-- Post Favourite -->
+                                <div class="post-favourite">
+                                    <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i> 370</a>
+                                </div>
+                                <!-- Post Comments -->
+                                <div class="post-comments">
+                                    <a href=""><i class="fa fa-comment-o" aria-hidden="true"></i> 37</a>
+                                </div>
+                                <!-- Post Share -->
+                                <div class="post-share">
+                                    <a href=""><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="ArXXTxxMepZFP.html">
+                            <h4 class="post-headline">Тема:" Агробиогеоценоз как при использовании технологии переноса "</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Single Post -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-post fadeInUp">
+                    <!-- Post Thumb -->
+                    <div class="post-thumb">
+                        <img src="./assets/images/image00046.jpg" alt="">
+                    </div>
+                    <!-- Post Content -->
+                    <div class="post-content">
+                        <div class="post-meta d-flex">
+                            <!-- Post Comment & Share Area -->
+                            <div class="post-comment-share-area d-flex">
+                                <!-- Post Favourite -->
+                                <div class="post-favourite">
+                                    <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i> 37</a>
+                                </div>
+                                <!-- Post Comments -->
+                                <div class="post-comments">
+                                    <a href=""><i class="fa fa-comment-o" aria-hidden="true"></i> 13</a>
+                                </div>
+                                <!-- Post Share -->
+                                <div class="post-share">
+                                    <a href=""><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="7ce703f3f4da50d9f982d982fdb3dd9b.html">
+                            <h4 class="post-headline">Тема: "вязкий разрез: предпосылки и развитие"</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Single Post -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-post fadeInUp">
+                    <!-- Post Thumb -->
+                    <div class="post-thumb">
+                        <img src="./assets/images/image00140.jpg" alt="">
+                    </div>
+                    <!-- Post Content -->
+                    <div class="post-content">
+                        <div class="post-meta d-flex">
+                            <!-- Post Comment & Share Area -->
+                            <div class="post-comment-share-area d-flex">
+                                <!-- Post Favourite -->
+                                <div class="post-favourite">
+                                    <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i> 120</a>
+                                </div>
+                                <!-- Post Comments -->
+                                <div class="post-comments">
+                                    <a href=""><i class="fa fa-comment-o" aria-hidden="true"></i> 260</a>
+                                </div>
+                                <!-- Post Share -->
+                                <div class="post-share">
+                                    <a href=""><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="27944baef69a65fafe295d81850e85de.html">
+                            <h4 class="post-headline">Тема: "межблочный электрод: предпосылки и развитие"</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</section>
+
+<style>
+    .post-thumb img {
+        border-radius: 30px;
+        margin-bottom: 30px;
+        height: 200px;
+        width: 94%;
+        object-fit: cover;
+    }
+
+    .post-meta {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -ms-grid-row-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .post-author a,
+    .post-date a,
+    .post-favourite a,
+    .post-comments a,
+    .post-share a {
+        color: #b5aec4;
+        font-size: 14px;
+    }
+
+    .post-author a:hover,
+    .post-date a:hover,
+    .post-favourite a:hover,
+    .post-comments a:hover,
+    .post-share a:hover {
+        color: #000;
+    }
+
+    .post-favourite a,
+    .post-comments a {
+        margin-right: 15px;
+    }
+
+    .post-author a {
+        margin-right: 30px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .post-author a:after {
+        width: 2px;
+        height: 60%;
+        content: '';
+        position: absolute;
+        top: 20%;
+        right: -14px;
+        z-index: 2;
+        background-color: #b5aec4;
+    }
+
+    .single-post {
+        margin-bottom: 30px;
+    }
+
+    .single-post h2,
+    .single-post h4 {
+        margin: 10px 0;
+        color: #232d37;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        text-transform: capitalize;
+    }
+
+    .single-post h2:hover,
+    .single-post h4:hover {
+        color: #fc6c3f;
+    }
+
+    .single-post p {
+        color: #51545f;
+    }
+
+    .single-post .read-more {
+        font-size: 12px;
+        color: #b5aeba;
+        display: inline-block;
+        border: 1px solid #ebebeb;
+        border-radius: 30px;
+        height: 40px;
+        min-width: 170px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+
+    .single-post .read-more:hover {
+        color: #000;
+        border: 1px solid #000;
+    }
+
+    /* List Blog Area CSS */
+
+    .list-blog.single-post .post-thumb,
+    .list-blog.single-post .post-content {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        margin-right: 15px;
+    }
+
+    .list-blog.single-post .post-content {
+        margin-right: 0;
+        margin-left: 15px;
+        margin-bottom: 30px;
+    }
+
+    .list-blog.single-post {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #ebebeb;
+    }
+
+    .blog_area .col-12:last-of-type .list-blog.single-post {
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+
+    .blog_area .col-12:last-of-type .list-blog.single-post .post-thumb img {
+        margin-bottom: 0;
+    }
+
+    .archive-area {
+        padding: 80px 0;
+    }
+</style>
+
+<footer class="probootstrap-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb0">&copy; Copyright. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6">
+            </div>
+        </div>
+    </div>
+</footer>
+<style>
+    .probootstrap-footer {
+        padding: 3em 0;
+        background: #000;
+        position: relative;
+        color: rgba(255,255,255,.4);
+    }
+</style>
+<div class='cookie-banner'>
+    <p>
+        Сайт использует файлы cookie. Они позволяют узнавать вас и получать информацию о вашем пользовательском опыте.Продолжая просмотр сайта, я соглашаюсь с использованием файлов cookie владельцем сайта в соответствии с <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Политикой cookie</a>
+    </p>
+    <button class='close-cookie'>&times;</button>
+</div>
+
+<script src="js/scripts.js"></script>
+<script src="js/main.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+    window.onload = function () {
+        jQuery('.close-cookie').click(function () {
+            jQuery('.cookie-banner').fadeOut();
+        })
+    }
+
+    let elems = document.querySelectorAll('.server-name');
+    elems.forEach((elem) => {
+        elem.innerHTML = window.location.hostname
+    })
+</script>
+
+</body>
+</html>

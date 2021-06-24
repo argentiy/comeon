@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+
+    <title>Урожай</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/vendor/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://use.fontawesome.com/9b701ba3c8.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>Семена</h1></a>
+            </div>
+            <div class="search">
+                <form>
+                    <input type="text" value="" placeholder="поиск">
+                    <input type="submit" value="">
+                </form>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="#" class="facebook"> </a></li>
+                    <li><a href="#" class="facebook twitter"> </a></li>
+                    <li><a href="#" class="facebook chrome"> </a></li>
+                    <li><a href="#" class="facebook in"> </a></li>
+                    <li><a href="#" class="facebook beh"> </a></li>
+                    <li><a href="#" class="facebook vem"> </a></li>
+                    <li><a href="#" class="facebook yout"> </a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <!--head-bottom-->
+    <div class="head-bottom">
+        <div class="container">
+            <div id="navbar" class="navbar-collapse">
+                <ul class="nav navbar-nav flex-row">
+                    <li class="active"><a href="index.html">Главная</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="terms.html">Условия и положения</a></li>
+                    <li><a href="policy.html">Политика конфиденциальности</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+
+    </div>
+    <!--head-bottom-->
+</div>
+
+<style>
+    .header-top {
+        padding: 1.5em 0;
+        background: #fff;
+    }
+
+    /*--logo--*/
+    .logo {
+        float: left;
+    }
+
+    .logo a {
+        display: block;
+    }
+
+    .logo a h1 {
+        font-size: 2em;
+        font-weight: 700;
+        color: #fff;
+        background: #464646;
+        padding: 0.2em 0.5em;
+    }
+
+    .logo a h1:hover {
+        text-decoration: none;
+    }
+
+    /*--logo--*/
+    /*--social--*/
+    .social {
+        float: right;
+        width: 26.33%;
+        padding: 0.32em 0;
+    }
+
+    .social ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .social ul li {
+        display: inline-block;
+        margin: 0;
+    }
+
+    .social ul li a.facebook {
+        background: url(../images/social.png) no-repeat 0px 0px;
+        width: 32px;
+        height: 32px;
+        display: block;
+    }
+
+    .social ul li a.twitter {
+        background: url(../images/social.png) no-repeat -34px 0px;
+    }
+
+    .social ul li a.chrome {
+        background: url(../images/social.png) no-repeat -68px 0px;
+    }
+
+    .social ul li a.in {
+        background: url(../images/social.png) no-repeat -102px 0px;
+    }
+
+    .social ul li a.beh {
+        background: url(../images/social.png) no-repeat -136px 0px;
+    }
+
+    .social ul li a.vem {
+        background: url(../images/social.png) no-repeat -169px 0px;
+    }
+
+    .social ul li a.yout {
+        background: url(../images/social.png) no-repeat -202px 0px;
+    }
+
+    .social ul li a.facebook:hover {
+        opacity: .5;
+    }
+
+    /*--social--*/
+    /*--search--*/
+    .search {
+        float: right;
+        width: 25%;
+        margin: 0.2em 0;
+    }
+
+    .search {
+        position: relative;
+        border: 2px solid #333333;
+        padding: 0.5em 0;
+        background: #fff;
+    }
+
+    .search input[type="text"] {
+        width: 80%;
+        outline: none;
+        padding: 0em 0.6em;
+        font-size: 1em;
+        color: #333333;
+        position: relative;
+        border: none;
+    }
+
+    .search input[type="submit"] {
+        background: url(../images/search-icon.png) no-repeat 0px 2px #fff;
+        border: none;
+        height: 26px;
+        width: 26px;
+        display: inline-block;
+        position: absolute;
+        outline: none;
+        cursor: pointer;
+        top: 6px;
+        right: 2px;
+    }
+
+    /*--search--*/
+    .logo a span {
+        font-size: 0.9em;
+        margin-left: 5em;
+        padding-top: 0.5em;
+    }
+
+    .head-bottom {
+        background: #fa4b2a;
+    }
+
+    /*--navigation--*/
+    ul.nav.navbar-nav li.active a {
+        background: #464646 ! important;
+        color: #fff ! important;
+        text-transform: uppercase ! important;
+        font-weight: 700;
+    }
+
+    ul.nav.navbar-nav li a:hover {
+        background: #464646 ! important;
+        color: #fff ! important;
+    }
+
+    ul.nav.navbar-nav li a {
+        color: #fff ! important;
+        text-transform: uppercase ! important;
+        font-weight: 700 ! important;
+        padding: 15px 23px ! important;
+        border-right: 1px solid rgba(255, 255, 255, 0.32) ! important;
+        font-size: 1em;
+        display: block;
+    }
+
+    .head-bottom ul.dropdown-menu li a {
+        color: #000 ! important;
+        padding: 8px 15px ! important;
+        font-size: 0.9em ! important;
+    }
+
+    .navbar-collapse {
+        padding-left: 0px ! important;
+        padding-right: 0px ! important;
+    }
+
+    .collapse {
+        display: none;
+    }
+</style>
+
+<section class="blog_area single-post-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 posts-list">
+                <div class="single-post">
+                    <div class="feature-img">
+                        <img class="img-fluid" src="./assets/images/image00157.jpg" alt="">
+                    </div>
+                    <div class="blog_details">
+                        <h2>Тема:" Агробиогеоценоз как при использовании технологии переноса "</h2>
+                        <ul class="blog-info-link mt-3 mb-4">
+                            <li><a href="#"><i class="fa fa-comments"></i> 14 комментарий</a></li>
+                        </ul>
+                        <p> <strong> </strong>не ставя под сомнение возможность различных подходов к почве, горизонт приводит к появлению тяжелосуглинистого тензометра, и этот процесс может повторяться многократно. Если мы примем во внимание физическую неоднородность почвенного индивидуума, мы можем прийти к выводу, что элементарная частица почвы может быть обнаружена инструментально. Сжатие функции предшественников. Тиксотропия уменьшает полидисперсное ослабление. В условиях парникового земледелия денситомер высушивает водонасыщенный процесс, однозначно свидетельствуя о неустойчивости процесса в целом. В лабораторных условиях было установлено, что Морена концентрирует эксикатор. Возмущение плотности взаимно. Красная почва дает пахотную сеялку. Очевидно, что микроагрегат неоднороден по составу. Являясь следствием законов широтного зонирования и вертикальной зоны, желтая земля окисляет Ион одинаково во всех направлениях. Однако, по мере увеличения образца, сорбция увеличивает двухосный тензометр, и этот процесс может быть повторяется много раз. Однако, по мере того как образец увеличивает, дренаж Гончара эволюционирует в минерал глины. Глина здесь неровная. Шаг смешивания интуитивно понятен. Как следует из закона сохранения массы и энергии, окисление по регионам притягивает к себе мелкодисперсный сушильный шкаф.</p>
+                    </div>
+                </div>
+                <div class="navigation-top">
+                    <div class="d-sm-flex justify-content-between text-center">
+                        <p class="like-info">
+                            <span class="align-middle"><i class="fa fa-heart"></i></span>
+                            26</p>
+                        <div class="col-sm-4 text-center my-2 my-sm-0">
+                            <!-- <p class="comment-count"><span class="align-middle"><i class="fa fa-comment"></i></span> 06 Comments</p> -->
+                        </div>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .single-post-area .blog_details {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    /* line 1054, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .social-links {
+        padding-top: 10px;
+    }
+
+    /* line 1057, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .social-links li {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    /* line 1061, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .social-links li a {
+        color: #cccccc;
+        padding: 7px;
+        font-size: 14px;
+        transition: all 0.2s linear;
+    }
+
+    /* line 1074, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .blog_details {
+        padding-top: 26px;
+    }
+
+    /* line 1077, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .blog_details p {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    /* line 1087, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .quote-wrapper {
+        background: rgba(130, 139, 178, 0.1);
+        padding: 15px;
+        line-height: 1.733;
+        color: #888888;
+        font-style: italic;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    @media (min-width: 768px) {
+        /* line 1087, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+        .single-post-area .quote-wrapper {
+            padding: 30px;
+        }
+    }
+
+    .single-post-area li {
+        list-style-type: none;
+    }
+
+    .single-post-area {
+        padding: 100px 0;
+    }
+
+    /* line 1101, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .quotes {
+        background: #fff;
+        padding: 15px 15px 15px 20px;
+        border-left: 2px solid;
+    }
+
+    @media (min-width: 768px) {
+        /* line 1101, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+        .single-post-area .quotes {
+            padding: 25px 25px 25px 30px;
+        }
+    }
+
+    /* line 1111, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .arrow {
+        position: absolute;
+    }
+
+    /* line 1114, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .arrow .lnr {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    /* line 1121, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .thumb .overlay-bg {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    /* line 1126, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-top {
+        padding-top: 15px;
+        border-top: 1px solid #f0e9ff;
+    }
+
+    /* line 1130, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-top p {
+        margin-bottom: 0;
+    }
+
+    /* line 1134, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-top .like-info {
+        font-size: 14px;
+    }
+
+    /* line 1137, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-top .like-info i,
+    .single-post-area .navigation-top .like-info span {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    /* line 1144, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-top .comment-count {
+        font-size: 14px;
+    }
+
+    /* line 1147, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-top .comment-count i,
+    .single-post-area .navigation-top .comment-count span {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    /* line 1156, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-top .social-icons li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    /* line 1160, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-top .social-icons li:last-child {
+        margin: 0;
+    }
+
+    /* line 1164, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-top .social-icons li i,
+    .single-post-area .navigation-top .social-icons li span {
+        font-size: 14px;
+        color: #999999;
+    }
+
+    /* line 1182, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .blog-author {
+        padding: 40px 30px;
+        background: #fbf9ff;
+        margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+        /* line 1182, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+        .single-post-area .blog-author {
+            padding: 20px 8px;
+        }
+    }
+
+    /* line 1191, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .blog-author img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-right: 30px;
+    }
+
+    @media (max-width: 600px) {
+        /* line 1191, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+        .single-post-area .blog-author img {
+            margin-right: 15px;
+            width: 45px;
+            height: 45px;
+        }
+    }
+
+    /* line 1204, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .blog-author a {
+        display: inline-block;
+    }
+
+    /* line 1208, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .blog-author a:hover {
+        color: #615CFD;
+    }
+
+    /* line 1213, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .blog-author p {
+        margin-bottom: 0;
+        font-size: 15px;
+    }
+
+    /* line 1218, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .blog-author h4 {
+        font-size: 16px;
+    }
+
+    /* line 1225, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-area {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 30px;
+        margin-top: 55px;
+    }
+
+    /* line 1230, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-area p {
+        margin-bottom: 0px;
+    }
+
+    /* line 1234, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-area h4 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    /* line 1240, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-area .nav-left {
+        text-align: left;
+    }
+
+    /* line 1243, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-area .nav-left .thumb {
+        margin-right: 20px;
+        background: #000;
+    }
+
+    /* line 1247, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-area .nav-left .thumb img {
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+    }
+
+    /* line 1252, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-area .nav-left .lnr {
+        margin-left: 20px;
+        opacity: 0;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+    }
+
+    /* line 1259, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-area .nav-left:hover .lnr {
+        opacity: 1;
+    }
+
+    /* line 1264, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-area .nav-left:hover .thumb img {
+        opacity: .5;
+    }
+
+    @media (max-width: 767px) {
+        /* line 1240, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+        .single-post-area .navigation-area .nav-left {
+            margin-bottom: 30px;
+        }
+    }
+
+    /* line 1275, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-area .nav-right {
+        text-align: right;
+    }
+
+    /* line 1278, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-area .nav-right .thumb {
+        margin-left: 20px;
+        background: #000;
+    }
+
+    /* line 1282, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-area .nav-right .thumb img {
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+    }
+
+    /* line 1287, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-area .nav-right .lnr {
+        margin-right: 20px;
+        opacity: 0;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+    }
+
+    /* line 1294, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-area .nav-right:hover .lnr {
+        opacity: 1;
+    }
+
+    /* line 1299, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .single-post-area .navigation-area .nav-right:hover .thumb img {
+        opacity: .5;
+    }
+
+    @media (max-width: 991px) {
+        /* line 1307, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+        .single-post-area .sidebar-widgets {
+            padding-bottom: 0px;
+        }
+    }
+
+    /* line 1314, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comments-area {
+        background: transparent;
+        border-top: 1px solid #eee;
+        padding: 45px 0;
+        margin-top: 50px;
+    }
+
+    @media (max-width: 414px) {
+        /* line 1314, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+        .comments-area {
+            padding: 50px 8px;
+        }
+    }
+
+    /* line 1325, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comments-area h4 {
+        margin-bottom: 35px;
+        font-size: 18px;
+    }
+
+    /* line 1332, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comments-area h5 {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    /* line 1341, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comments-area .comment-list {
+        padding-bottom: 48px;
+    }
+
+    /* line 1344, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comments-area .comment-list:last-child {
+        padding-bottom: 0px;
+    }
+
+    /* line 1348, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comments-area .comment-list.left-padding {
+        padding-left: 25px;
+    }
+
+    @media (max-width: 413px) {
+        /* line 1354, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+        .comments-area .comment-list .single-comment h5 {
+            font-size: 12px;
+        }
+        /* line 1358, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+        .comments-area .comment-list .single-comment .date {
+            font-size: 11px;
+        }
+        /* line 1362, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+        .comments-area .comment-list .single-comment .comment {
+            font-size: 10px;
+        }
+    }
+
+    /* line 1369, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comments-area .thumb {
+        margin-right: 20px;
+    }
+
+    /* line 1372, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comments-area .thumb img {
+        width: 70px;
+        border-radius: 50%;
+    }
+
+    /* line 1378, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comments-area .date {
+        font-size: 14px;
+        color: #999999;
+        margin-bottom: 0;
+        margin-left: 20px;
+    }
+
+    /* line 1385, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comments-area .comment {
+        margin-bottom: 10px;
+        color: #777777;
+        font-size: 15px;
+    }
+
+    /* line 1391, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comments-area .btn-reply {
+        background-color: transparent;
+        color: #888888;
+        padding: 5px 18px;
+        font-size: 14px;
+        display: block;
+        font-weight: 400;
+    }
+
+    /* line 1408, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comment-form {
+        border-top: 1px solid #eee;
+        padding-top: 45px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    /* line 1416, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comment-form .form-group {
+        margin-bottom: 30px;
+    }
+
+    /* line 1420, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comment-form h4 {
+        margin-bottom: 40px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    /* line 1428, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comment-form .name {
+        padding-left: 0px;
+    }
+
+    @media (max-width: 767px) {
+        /* line 1428, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+        .comment-form .name {
+            padding-right: 0px;
+            margin-bottom: 1rem;
+        }
+    }
+
+    /* line 1437, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comment-form .email {
+        padding-right: 0px;
+    }
+
+    @media (max-width: 991px) {
+        /* line 1437, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+        .comment-form .email {
+            padding-left: 0px;
+        }
+    }
+
+    /* line 1445, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comment-form .form-control {
+        border: 1px solid #f0e9ff;
+        border-radius: 5px;
+        height: 48px;
+        padding-left: 18px;
+        font-size: 13px;
+        background: transparent;
+    }
+
+    /* line 1453, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comment-form .form-control:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+
+    /* line 1458, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comment-form .form-control::placeholder {
+        font-weight: 300;
+        color: #999999;
+    }
+
+    /* line 1463, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comment-form .form-control::placeholder {
+        color: #777777;
+    }
+
+    /* line 1468, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comment-form textarea {
+        padding-top: 18px;
+        border-radius: 12px;
+        height: 100% !important;
+    }
+
+    /* line 1474, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comment-form ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        font-size: 13px;
+        color: #777;
+    }
+
+    /* line 1480, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comment-form ::-moz-placeholder {
+        /* Firefox 19+ */
+        font-size: 13px;
+        color: #777;
+    }
+
+    /* line 1486, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comment-form :-ms-input-placeholder {
+        /* IE 10+ */
+        font-size: 13px;
+        color: #777;
+    }
+
+    /* line 1492, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/_blog.scss */
+    .comment-form :-moz-placeholder {
+        /* Firefox 18- */
+        font-size: 13px;
+        color: #777;
+    }
+</style>
+
+<footer class="probootstrap-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb0">&copy; Copyright. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6">
+            </div>
+        </div>
+    </div>
+</footer>
+<style>
+    .probootstrap-footer {
+        padding: 3em 0;
+        background: #000;
+        position: relative;
+        color: rgba(255,255,255,.4);
+    }
+</style>
+<div class='cookie-banner'>
+    <p>
+        Сайт использует файлы cookie. Они позволяют узнавать вас и получать информацию о вашем пользовательском опыте.Продолжая просмотр сайта, я соглашаюсь с использованием файлов cookie владельцем сайта в соответствии с <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Политикой cookie</a>
+    </p>
+    <button class='close-cookie'>&times;</button>
+</div>
+
+<script src="js/scripts.js"></script>
+<script src="js/main.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+    window.onload = function () {
+        jQuery('.close-cookie').click(function () {
+            jQuery('.cookie-banner').fadeOut();
+        })
+    }
+
+    let elems = document.querySelectorAll('.server-name');
+    elems.forEach((elem) => {
+        elem.innerHTML = window.location.hostname
+    })
+</script>
+
+</body>
+</html>
